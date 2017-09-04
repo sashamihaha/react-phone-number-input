@@ -3,76 +3,20 @@
 	/* This is done to stretch `.rrui__select__options` */
 	/* to the full width of `.react-phone-number-input__phone` */
 	position    : relative;
-
+	
 	/* This is done to stretch the contents of this component */
 	display     : flex;
 	align-items : center;
-}
-
-/* The phone number input stretches to fill all empty space */
-.react-phone-number-input__phone,
-/* The country select, when expanded, stretches to fill all empty space */
-.react-phone-number-input__country.rrui__select--expanded
-{
-	flex : 1;
-}
-
-.react-phone-number-input__phone
-{
-	font-size : inherit;
-}
-
-.react-phone-number-input__country:not(.rrui__select--expanded)
-{
-	margin-right : 0.5em;
-}
-
-.react-phone-number-input__country .rrui__select__selected--autocomplete
-{
-	width : 100%;
-}
-
-.react-phone-number-input__country:not(.react-phone-number-input__country--native-expanded) .rrui__input
-{
-	/* This is done to stretch `.rrui__select__options` */
-	/* to the full width of `.react-phone-number-input__phone` */
-	/* rather than to the full width of `.rrui__select` */
-	/* because the `.rrui__select` is contracted */
-	/* as soon as a user selects a country which caused */
-	/* the `.rrui__select__options` to contract too */
-	/* while the list collapse animation is still in progress. */
-	/* The `position: relative` container is now `.react-phone-number-input`. */
-	position: static;
-}
-
-.react-phone-number-input__phone,
-.react-phone-number-input__country .rrui__select__selected--autocomplete
-{
-	border        : none;
-	border-bottom : 1px solid #C5D2E0;
-	transition    : border 0.1s;
-}
-
-.react-phone-number-input__phone:focus
-{
-	border-bottom-color: #0093C4;
-}
-
-.react-phone-number-input .rrui__select__arrow
-{
-	margin-top  : 0.3em;
-	margin-left : 0.3em;
-}
-
-.react-phone-number-input .rrui__select__option
-{
-	display     : flex;
-	align-items : center;
-}
-
-.react-phone-number-input .rrui__select__option-icon
-{
-	margin-bottom : 0.1em;
+	color: #949ba2;
+	border: none;
+	border-radius: 4px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
+	background-color: #ddd;
+	height: 34px;
 }
 
 .react-phone-number-input__icon
@@ -84,6 +28,7 @@
 	border     : 1px solid #bfbfbf;
 	/* Makes sure `width`x`height` is exactly `4x3` and `border` width is not included in it */
 	box-sizing : content-box;
+	margin-bottom: 3px;
 }
 
 .react-phone-number-input__icon--international
@@ -100,3 +45,4 @@
 
 	border : none;
 }
+
